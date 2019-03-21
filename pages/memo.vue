@@ -81,7 +81,7 @@
           return this.$store.state.memo.page;
         },
         set: function (p) {
-          const pg = p > (this.$store.state.memo.memo.length - 1) / this.num_per_page ?
+          let pg = p > (this.$store.state.memo.memo.length - 1) / this.num_per_page ?
             Math.ceil((this.$store.state.memo.memo.length - 1) / this.num_per_page) - 1 : p;
           pg = pg < 0 ? 0 : pg;
           this.$store.commit('memo/set_page', pg);
