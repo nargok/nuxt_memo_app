@@ -9,7 +9,7 @@ export const mutations = {
     const fmt = data.getFullYear() + '-' + (date.getMonth() + 1)
       + '-' + date.getDate() + ' ' + date.getHours() + ':'
       + date.getMinutes();
-    stete.memo.unshift({
+    state.memo.unshift({
       title: obj.title,
       content: obj.content,
       created: fmt
