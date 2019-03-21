@@ -112,7 +112,7 @@
         if (this.sel_flg == false) {
           return;
         } else {
-          this.$store.commit('memo/remove', this.set_flg);
+          this.$store.commit('memo/remove', this.sel_flg);
           this.set_flg();
         }
       },
