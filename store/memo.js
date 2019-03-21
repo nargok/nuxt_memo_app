@@ -6,7 +6,7 @@ export const state = () => ({
 export const mutations = {
   insert: function (state, obj) {
     const date = new Date();
-    const fmt = data.getFullYear() + '-' + (date.getMonth() + 1)
+    const fmt = date.getFullYear() + '-' + (date.getMonth() + 1)
       + '-' + date.getDate() + ' ' + date.getHours() + ':'
       + date.getMinutes();
     state.memo.unshift({

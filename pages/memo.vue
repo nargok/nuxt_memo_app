@@ -97,7 +97,12 @@
           this.content = '';
         }
       },
-      insert: function (item) {
+      insert: function() {
+        this.$store.commit('memo/insert', {title: this.title, content: this.content});
+        this.title = '';
+        this.content = '';
+      },
+      select: function (item) {
         this.find_flg = false;
         this.sel_flg = item;
         this.title = item.title;
